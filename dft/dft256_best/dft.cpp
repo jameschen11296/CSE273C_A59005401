@@ -6,10 +6,7 @@ void dft(DTYPE real_sample[SIZE], DTYPE imag_sample[SIZE], DTYPE real_out[SIZE],
 {
 #pragma HLS INTERFACE ap_vld port=real_sample
 #pragma HLS INTERFACE ap_vld port=imag_sample
-//#pragma HLS ARRAY_PARTITION variable=real_sample cyclic factor=16
-//#pragma HLS ARRAY_PARTITION variable=imag_sample cyclic factor=16
 	for(int i=0;i<SIZE;i++){
-//#pragma HLS pipeline II=200
 		for(int j=0;j<SIZE;j++){
 			#pragma HLS unroll factor=16
 			//#pragma HLS pipeline
