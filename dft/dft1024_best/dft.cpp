@@ -3,7 +3,7 @@
 #include"coefficients1024.h"
 
 void dft(axis_t *INPUT1, axis_t *INPUT2, axis_t *OUTPUT1, axis_t *OUTPUT2){
-#pragma HLS INTERFACE s_axilite port=1024 bundle=CTRL
+#pragma HLS INTERFACE s_axilite port=return
 #pragma HLS INTERFACE axis depth=1024 port=OUTPUT1
 #pragma HLS INTERFACE axis depth=1024 port=OUTPUT2
 #pragma HLS INTERFACE axis depth=1024 port=INPUT1
@@ -28,8 +28,8 @@ void dft(axis_t *INPUT1, axis_t *INPUT2, axis_t *OUTPUT1, axis_t *OUTPUT2){
 		cur3.data=real_out[i];
 		cur3.last=0;
 		*OUTPUT1++ = cur3;
-		cur3.data=imag_out[i];
-		cur3.last=0;
+		cur4.data=imag_out[i];
+		cur4.last=0;
 		*OUTPUT2++ = cur4;
 	}
 	cur3.data=real_out[SIZE-1];

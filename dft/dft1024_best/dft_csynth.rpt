@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'dft'
 ================================================================
-* Date:           Mon Nov  2 21:57:45 2020
+* Date:           Tue Nov  3 00:20:18 2020
 
 * Version:        2020.1 (Build 2897737 on Wed May 27 20:21:37 MDT 2020)
 * Project:        hls
@@ -59,12 +59,12 @@
 |DSP              |        -|      -|       -|      -|    -|
 |Expression       |        -|      0|       0|   1269|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |        -|     20|    1392|   2844|    -|
+|Instance         |        0|     20|    1428|   2884|    -|
 |Memory           |       12|      -|       0|      0|    0|
-|Multiplexer      |        -|      -|       -|   1015|    -|
+|Multiplexer      |        -|      -|       -|   1036|    -|
 |Register         |        -|      -|     663|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |       12|     20|    2055|   5128|    0|
+|Total            |       12|     20|    2091|   5189|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -76,6 +76,7 @@
     +-------------------------+----------------------+---------+-------+-----+-----+-----+
     |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
     +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    |dft_AXILiteS_s_axi_U     |dft_AXILiteS_s_axi    |        0|      0|   36|   40|    0|
     |dft_fadd_32ns_32neOg_U2  |dft_fadd_32ns_32neOg  |        0|      2|  205|  390|    0|
     |dft_fadd_32ns_32neOg_U4  |dft_fadd_32ns_32neOg  |        0|      2|  205|  390|    0|
     |dft_faddfsub_32nsdEe_U1  |dft_faddfsub_32nsdEe  |        0|      2|  205|  390|    0|
@@ -85,7 +86,7 @@
     |dft_fmul_32ns_32ng8j_U8  |dft_fmul_32ns_32ng8j  |        0|      3|  143|  321|    0|
     |dft_fsub_32ns_32nfYi_U3  |dft_fsub_32ns_32nfYi  |        0|      2|  205|  390|    0|
     +-------------------------+----------------------+---------+-------+-----+-----+-----+
-    |Total                    |                      |        0|     20| 1392| 2844|    0|
+    |Total                    |                      |        0|     20| 1428| 2884|    0|
     +-------------------------+----------------------+---------+-------+-----+-----+-----+
 
     * DSP48E: 
@@ -112,48 +113,48 @@
     +------------------------+----------+-------+---+----+------------+------------+
     |      Variable Name     | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +------------------------+----------+-------+---+----+------------+------------+
-    |mul_ln22_10_fu_1174_p2  |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_11_fu_1196_p2  |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_12_fu_1218_p2  |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_13_fu_1240_p2  |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_14_fu_1262_p2  |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_15_fu_1284_p2  |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_1_fu_976_p2    |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_2_fu_998_p2    |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_3_fu_1020_p2   |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_4_fu_1042_p2   |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_5_fu_1064_p2   |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_6_fu_1086_p2   |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_7_fu_1108_p2   |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_8_fu_1130_p2   |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_9_fu_1152_p2   |     *    |      0|  0|  63|          10|          10|
-    |mul_ln22_fu_948_p2      |     *    |      0|  0|  63|          10|          10|
-    |add_ln20_fu_959_p2      |     +    |      0|  0|  13|           5|          11|
-    |i_2_fu_920_p2           |     +    |      0|  0|  13|           1|          11|
-    |i_3_fu_1301_p2          |     +    |      0|  0|  14|          10|           1|
-    |i_fu_888_p2             |     +    |      0|  0|  13|          11|           1|
-    |icmp_ln13_fu_882_p2     |   icmp   |      0|  0|  13|          11|          12|
-    |icmp_ln19_fu_914_p2     |   icmp   |      0|  0|  13|          11|          12|
-    |icmp_ln20_fu_932_p2     |   icmp   |      0|  0|  13|          11|          12|
-    |icmp_ln27_fu_1295_p2    |   icmp   |      0|  0|  13|          10|           2|
+    |mul_ln22_10_fu_1180_p2  |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_11_fu_1202_p2  |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_12_fu_1224_p2  |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_13_fu_1246_p2  |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_14_fu_1268_p2  |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_15_fu_1290_p2  |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_1_fu_982_p2    |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_2_fu_1004_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_3_fu_1026_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_4_fu_1048_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_5_fu_1070_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_6_fu_1092_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_7_fu_1114_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_8_fu_1136_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_9_fu_1158_p2   |     *    |      0|  0|  63|          10|          10|
+    |mul_ln22_fu_954_p2      |     *    |      0|  0|  63|          10|          10|
+    |add_ln20_fu_965_p2      |     +    |      0|  0|  13|           5|          11|
+    |i_2_fu_926_p2           |     +    |      0|  0|  13|           1|          11|
+    |i_3_fu_1307_p2          |     +    |      0|  0|  14|          10|           1|
+    |i_fu_894_p2             |     +    |      0|  0|  13|          11|           1|
+    |icmp_ln13_fu_888_p2     |   icmp   |      0|  0|  13|          11|          12|
+    |icmp_ln19_fu_920_p2     |   icmp   |      0|  0|  13|          11|          12|
+    |icmp_ln20_fu_938_p2     |   icmp   |      0|  0|  13|          11|          12|
+    |icmp_ln27_fu_1301_p2    |   icmp   |      0|  0|  13|          10|           2|
     |ap_block_state100       |    or    |      0|  0|   2|           1|           1|
     |ap_block_state100_io    |    or    |      0|  0|   2|           1|           1|
     |ap_block_state2         |    or    |      0|  0|   2|           1|           1|
-    |or_ln20_10_fu_1185_p2   |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_11_fu_1207_p2   |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_12_fu_1229_p2   |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_13_fu_1251_p2   |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_14_fu_1273_p2   |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_1_fu_987_p2     |    or    |      0|  0|  10|          10|           2|
-    |or_ln20_2_fu_1009_p2    |    or    |      0|  0|  10|          10|           2|
-    |or_ln20_3_fu_1031_p2    |    or    |      0|  0|  10|          10|           3|
-    |or_ln20_4_fu_1053_p2    |    or    |      0|  0|  10|          10|           3|
-    |or_ln20_5_fu_1075_p2    |    or    |      0|  0|  10|          10|           3|
-    |or_ln20_6_fu_1097_p2    |    or    |      0|  0|  10|          10|           3|
-    |or_ln20_7_fu_1119_p2    |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_8_fu_1141_p2    |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_9_fu_1163_p2    |    or    |      0|  0|  10|          10|           4|
-    |or_ln20_fu_965_p2       |    or    |      0|  0|  10|          10|           1|
+    |or_ln20_10_fu_1191_p2   |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_11_fu_1213_p2   |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_12_fu_1235_p2   |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_13_fu_1257_p2   |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_14_fu_1279_p2   |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_1_fu_993_p2     |    or    |      0|  0|  10|          10|           2|
+    |or_ln20_2_fu_1015_p2    |    or    |      0|  0|  10|          10|           2|
+    |or_ln20_3_fu_1037_p2    |    or    |      0|  0|  10|          10|           3|
+    |or_ln20_4_fu_1059_p2    |    or    |      0|  0|  10|          10|           3|
+    |or_ln20_5_fu_1081_p2    |    or    |      0|  0|  10|          10|           3|
+    |or_ln20_6_fu_1103_p2    |    or    |      0|  0|  10|          10|           3|
+    |or_ln20_7_fu_1125_p2    |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_8_fu_1147_p2    |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_9_fu_1169_p2    |    or    |      0|  0|  10|          10|           4|
+    |or_ln20_fu_971_p2       |    or    |      0|  0|  10|          10|           1|
     +------------------------+----------+-------+---+----+------------+------------+
     |Total                   |          |      0|  0|1269|         383|         274|
     +------------------------+----------+-------+---+----+------------+------------+
@@ -167,42 +168,42 @@
     |OUTPUT1_TDATA_blk_n            |    9|          2|    1|          2|
     |OUTPUT1_TLAST_int              |   15|          3|    1|          3|
     |OUTPUT2_TDATA_blk_n            |    9|          2|    1|          2|
+    |OUTPUT2_TLAST_int              |   15|          3|    1|          3|
     |ap_NS_fsm                      |  445|        101|    1|        101|
     |cos_coefficients_tab_address0  |   85|         17|   10|        170|
-    |grp_fu_766_opcode              |   15|          3|    2|          6|
-    |grp_fu_766_p0                  |   21|          4|   32|        128|
-    |grp_fu_766_p1                  |   21|          4|   32|        128|
-    |grp_fu_770_p0                  |   21|          4|   32|        128|
-    |grp_fu_770_p1                  |   21|          4|   32|        128|
-    |i1_0_reg_733                   |    9|          2|   11|         22|
-    |i2_0_reg_755                   |    9|          2|   10|         20|
-    |i_0_reg_722                    |    9|          2|   11|         22|
-    |imag_out_address0              |   15|          3|   10|         30|
+    |grp_fu_772_opcode              |   15|          3|    2|          6|
+    |grp_fu_772_p0                  |   21|          4|   32|        128|
+    |grp_fu_772_p1                  |   21|          4|   32|        128|
+    |grp_fu_776_p0                  |   21|          4|   32|        128|
+    |grp_fu_776_p1                  |   21|          4|   32|        128|
+    |i1_0_reg_739                   |    9|          2|   11|         22|
+    |i2_0_reg_761                   |    9|          2|   10|         20|
+    |i_0_reg_728                    |    9|          2|   11|         22|
+    |imag_out_address0              |   21|          4|   10|         40|
     |imag_sample_address0           |   89|         18|   10|        180|
-    |j_0_0_reg_744                  |    9|          2|   11|         22|
+    |j_0_0_reg_750                  |    9|          2|   11|         22|
     |real_out_address0              |   21|          4|   10|         40|
     |real_sample_address0           |   89|         18|   10|        180|
     |sin_coefficients_tab_address0  |   85|         17|   10|        170|
     +-------------------------------+-----+-----------+-----+-----------+
-    |Total                          | 1015|        216|  239|       1486|
+    |Total                          | 1036|        220|  240|       1499|
     +-------------------------------+-----+-----------+-----+-----------+
 
     * Register: 
     +------------------------+-----+----+-----+-----------+
     |          Name          |  FF | LUT| Bits| Const Bits|
     +------------------------+-----+----+-----+-----------+
-    |add_ln20_reg_1400       |   11|   0|   11|          0|
+    |add_ln20_reg_1407       |   11|   0|   11|          0|
     |ap_CS_fsm               |  100|   0|  100|          0|
-    |empty_7_reg_1371        |   10|   0|   10|          0|
-    |i1_0_reg_733            |   11|   0|   11|          0|
-    |i2_0_reg_755            |   10|   0|   10|          0|
-    |i_0_reg_722             |   11|   0|   11|          0|
-    |i_2_reg_1343            |   11|   0|   11|          0|
-    |i_3_reg_1708            |   10|   0|   10|          0|
-    |imag_out_addr_reg_1353  |   10|   0|   10|          0|
-    |j_0_0_reg_744           |   11|   0|   11|          0|
-    |real_out_addr_reg_1348  |   10|   0|   10|          0|
-    |reg_798                 |   32|   0|   32|          0|
+    |empty_7_reg_1378        |   10|   0|   10|          0|
+    |i1_0_reg_739            |   11|   0|   11|          0|
+    |i2_0_reg_761            |   10|   0|   10|          0|
+    |i_0_reg_728             |   11|   0|   11|          0|
+    |i_2_reg_1350            |   11|   0|   11|          0|
+    |i_3_reg_1715            |   10|   0|   10|          0|
+    |imag_out_addr_reg_1360  |   10|   0|   10|          0|
+    |j_0_0_reg_750           |   11|   0|   11|          0|
+    |real_out_addr_reg_1355  |   10|   0|   10|          0|
     |reg_804                 |   32|   0|   32|          0|
     |reg_810                 |   32|   0|   32|          0|
     |reg_816                 |   32|   0|   32|          0|
@@ -212,11 +213,12 @@
     |reg_840                 |   32|   0|   32|          0|
     |reg_846                 |   32|   0|   32|          0|
     |reg_852                 |   32|   0|   32|          0|
-    |reg_859                 |   32|   0|   32|          0|
+    |reg_858                 |   32|   0|   32|          0|
     |reg_865                 |   32|   0|   32|          0|
-    |reg_872                 |   32|   0|   32|          0|
-    |reg_877                 |   32|   0|   32|          0|
-    |trunc_ln22_reg_1320     |   10|   0|   10|          0|
+    |reg_871                 |   32|   0|   32|          0|
+    |reg_878                 |   32|   0|   32|          0|
+    |reg_883                 |   32|   0|   32|          0|
+    |trunc_ln22_reg_1327     |   10|   0|   10|          0|
     +------------------------+-----+----+-----+-----------+
     |Total                   |  663|   0|  663|          0|
     +------------------------+-----+----+-----+-----------+
@@ -227,30 +229,44 @@
 == Interface
 ================================================================
 * Summary: 
-+----------------+-----+-----+------------+----------------+--------------+
-|    RTL Ports   | Dir | Bits|  Protocol  |  Source Object |    C Type    |
-+----------------+-----+-----+------------+----------------+--------------+
-|ap_clk          |  in |    1| ap_ctrl_hs |       dft      | return value |
-|ap_rst_n        |  in |    1| ap_ctrl_hs |       dft      | return value |
-|ap_start        |  in |    1| ap_ctrl_hs |       dft      | return value |
-|ap_done         | out |    1| ap_ctrl_hs |       dft      | return value |
-|ap_idle         | out |    1| ap_ctrl_hs |       dft      | return value |
-|ap_ready        | out |    1| ap_ctrl_hs |       dft      | return value |
-|INPUT1_TDATA    |  in |   32|    axis    |   INPUT1_data  |    pointer   |
-|INPUT1_TVALID   |  in |    1|    axis    |  INPUT1_last_V |    pointer   |
-|INPUT1_TREADY   | out |    1|    axis    |  INPUT1_last_V |    pointer   |
-|INPUT1_TLAST    |  in |    1|    axis    |  INPUT1_last_V |    pointer   |
-|INPUT2_TDATA    |  in |   32|    axis    |   INPUT2_data  |    pointer   |
-|INPUT2_TVALID   |  in |    1|    axis    |  INPUT2_last_V |    pointer   |
-|INPUT2_TREADY   | out |    1|    axis    |  INPUT2_last_V |    pointer   |
-|INPUT2_TLAST    |  in |    1|    axis    |  INPUT2_last_V |    pointer   |
-|OUTPUT1_TDATA   | out |   32|    axis    |  OUTPUT1_data  |    pointer   |
-|OUTPUT1_TVALID  | out |    1|    axis    | OUTPUT1_last_V |    pointer   |
-|OUTPUT1_TREADY  |  in |    1|    axis    | OUTPUT1_last_V |    pointer   |
-|OUTPUT1_TLAST   | out |    1|    axis    | OUTPUT1_last_V |    pointer   |
-|OUTPUT2_TDATA   | out |   32|    axis    |  OUTPUT2_data  |    pointer   |
-|OUTPUT2_TVALID  | out |    1|    axis    | OUTPUT2_last_V |    pointer   |
-|OUTPUT2_TREADY  |  in |    1|    axis    | OUTPUT2_last_V |    pointer   |
-|OUTPUT2_TLAST   | out |    1|    axis    | OUTPUT2_last_V |    pointer   |
-+----------------+-----+-----+------------+----------------+--------------+
++------------------------+-----+-----+------------+----------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |  Source Object |    C Type    |
++------------------------+-----+-----+------------+----------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_AWADDR   |  in |    4|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_ARADDR   |  in |    4|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |    AXILiteS    |  return void |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |    AXILiteS    |  return void |
+|ap_clk                  |  in |    1| ap_ctrl_hs |       dft      | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |       dft      | return value |
+|interrupt               | out |    1| ap_ctrl_hs |       dft      | return value |
+|INPUT1_TDATA            |  in |   32|    axis    |   INPUT1_data  |    pointer   |
+|INPUT1_TVALID           |  in |    1|    axis    |  INPUT1_last_V |    pointer   |
+|INPUT1_TREADY           | out |    1|    axis    |  INPUT1_last_V |    pointer   |
+|INPUT1_TLAST            |  in |    1|    axis    |  INPUT1_last_V |    pointer   |
+|INPUT2_TDATA            |  in |   32|    axis    |   INPUT2_data  |    pointer   |
+|INPUT2_TVALID           |  in |    1|    axis    |  INPUT2_last_V |    pointer   |
+|INPUT2_TREADY           | out |    1|    axis    |  INPUT2_last_V |    pointer   |
+|INPUT2_TLAST            |  in |    1|    axis    |  INPUT2_last_V |    pointer   |
+|OUTPUT1_TDATA           | out |   32|    axis    |  OUTPUT1_data  |    pointer   |
+|OUTPUT1_TVALID          | out |    1|    axis    | OUTPUT1_last_V |    pointer   |
+|OUTPUT1_TREADY          |  in |    1|    axis    | OUTPUT1_last_V |    pointer   |
+|OUTPUT1_TLAST           | out |    1|    axis    | OUTPUT1_last_V |    pointer   |
+|OUTPUT2_TDATA           | out |   32|    axis    |  OUTPUT2_data  |    pointer   |
+|OUTPUT2_TVALID          | out |    1|    axis    | OUTPUT2_last_V |    pointer   |
+|OUTPUT2_TREADY          |  in |    1|    axis    | OUTPUT2_last_V |    pointer   |
+|OUTPUT2_TLAST           | out |    1|    axis    | OUTPUT2_last_V |    pointer   |
++------------------------+-----+-----+------------+----------------+--------------+
 
