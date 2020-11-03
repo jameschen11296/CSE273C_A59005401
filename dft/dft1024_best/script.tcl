@@ -5,11 +5,11 @@
 ############################################################
 open_project hls
 set_top dft
-add_files dft.h
-add_files dft.cpp
 add_files coefficients1024.h
-add_files -tb out.gold.dat -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files dft.cpp
+add_files dft.h
 add_files -tb dft_test.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb out.gold.dat -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution1"
 set_part {xc7z020-clg484-1}
 create_clock -period 10 -name default

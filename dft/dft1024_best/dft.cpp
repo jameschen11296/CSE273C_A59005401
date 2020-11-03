@@ -3,7 +3,7 @@
 #include"coefficients1024.h"
 
 void dft(axis_t *INPUT1, axis_t *INPUT2, axis_t *OUTPUT1, axis_t *OUTPUT2){
-#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE s_axilite port=1024 bundle=CTRL
 #pragma HLS INTERFACE axis depth=1024 port=OUTPUT1
 #pragma HLS INTERFACE axis depth=1024 port=OUTPUT2
 #pragma HLS INTERFACE axis depth=1024 port=INPUT1
