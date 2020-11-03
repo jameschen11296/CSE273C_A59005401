@@ -4,6 +4,8 @@
 
 void dft(DTYPE real_sample[SIZE], DTYPE imag_sample[SIZE], DTYPE real_out[SIZE],DTYPE imag_out[SIZE])
 {
+#pragma HLS INTERFACE ap_vld port=real_sample
+#pragma HLS INTERFACE ap_vld port=imag_sample
 #pragma HLS ARRAY_PARTITION variable=real_sample cyclic factor=8
 #pragma HLS ARRAY_PARTITION variable=imag_sample cyclic factor=8
 	int theta=0;
